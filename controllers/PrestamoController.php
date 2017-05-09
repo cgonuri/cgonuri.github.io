@@ -113,8 +113,8 @@ class PrestamoController extends Controller
 
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $prenda->changeEstado($idPrenda);
-            return $this->redirect(['view', 'id' => $model->idPrestamo]);
+            //$prenda->changeEstado($idPrenda);
+            return $this->redirect(['prenda/view', 'idPrenda' => $model->idPrenda, 'reserva' => 'ok']);
         } else {
             return $this->render('create', [
                 'model' => $model,

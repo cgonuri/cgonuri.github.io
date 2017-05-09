@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'dueno',
             'estado',
             //'idTalla',
-            'tipoPrendaId',
+            //'tipoPrendaId',
             'descrip',
             // 'tipoDescripcion',
             // 'tipo',
@@ -47,10 +47,3 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
-
-<?php
-
-echo '<pre>';
-print_r($dataProvider);
-
- ?>

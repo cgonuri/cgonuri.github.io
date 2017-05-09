@@ -4,6 +4,9 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 use app\models\Grupo;
+use yii\widgets\ActiveForm;
+
+use yii\jui\DatePicker;
 
 
 /* @var $this yii\web\View */
@@ -25,10 +28,14 @@ else
 
 ?>
 <div class="prenda-view">
-<!-- <?php
-//$example = Yii::$app->tipo->;
-//echo "<h1>".$example."</h1>";
- ?> -->
+<?php
+
+// if(isset($_GET['reserva'])){
+//   $model->changeestado($model->idPrenda);
+// }
+
+
+ ?>
 
 
   <?php //if($model->imageFile !=null){
@@ -60,12 +67,9 @@ else
           ]);
       }else{
         echo Html::a('Reservar', ['prestamo/reserva', 'idPrenda' => $model->idPrenda, 'dueno' => $model->dueno], ['class' => 'btn btn-primary']);
-
-      }
-
         echo Html::a('Cambiar Estado', ['changeestado', 'idPrenda' => $model->idPrenda], ['class' => 'btn btn-primary']);
-
-        ?>
+      }
+?>
     </p>
 
     <?= DetailView::widget([

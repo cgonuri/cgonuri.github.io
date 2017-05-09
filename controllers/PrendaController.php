@@ -219,13 +219,12 @@ class PrendaController extends Controller
                 //return $this->render('view', ['model' => $model]);
              }
 
-             
+
              public function actionChangeestado($idPrenda){
 
-               $model = $this->findModel($idPrenda);
-               //$model = new Prenda();
-               // $model = $prenda->findModel($idPrenda);
-               $estado = $model->estado;
+               //$prenda = new Prenda();
+               //$model = $prenda->findModel($idPrenda);
+               $estado = $this->estado;
 
                switch ($estado) {
                  case 'Libre':
@@ -246,6 +245,9 @@ class PrendaController extends Controller
 
                return $this->render('view', ['model' => $model]);
              }
+
+
+
 
 
 
