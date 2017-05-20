@@ -9,12 +9,12 @@ body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
-    background-color: #EEEEEE
-;
+    background-color: rgb(167, 167, 169);
 }
 
 .wrap > .container {
     padding: 70px 15px 20px;
+    background-color: rgb(232, 232, 234);
 }
 
 .footer {
@@ -143,11 +143,8 @@ Aquí empiezo yo a meter estilos
   padding: 5px;
   width: 210px;
   height: 250px;
-  border: 2px solid rgb(42,40,45);
+  /*border: 2px solid rgb(167, 167, 169);*/
   background-color: white;
-}
-.wrap{
-
 }
 .site-index{
   position: absolute;
@@ -187,7 +184,7 @@ Aquí empiezo yo a meter estilos
 .marcoPrestamo{
   padding: 5px;
   height: 200px;
-  border: 1px solid gray;
+  border: 1px solid rgb(167, 167, 169);
   background-color: white;
 }
 .prestamo-box{
@@ -197,14 +194,17 @@ Aquí empiezo yo a meter estilos
 }
 .Libre{
   background-color: #4DB6AC;
-  color: black;
+  /*background-color: rgb(168,148,122);*/
+
 }
 .Pendiente{
   background-color: #D4E157;
   color: black;
+  /*background-color: rgb(85,49,30);*/
 }
-.Ocuapdo{
-  background-color: red;
+.Ocupado{
+  background-color: rgb(19,10,8);
+  /*background-color: red;*/
 }
 
 /*filtro de Mi armario*/
@@ -254,26 +254,7 @@ give gallery's parent container a cursor: pointer.**/
 /*
 Fin Zomm
 */
-.prenda-index{
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-.prenda-view{
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-.prenda-create{
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-.usuario-view{
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
+
 .table{
   background-color: white;
 }
@@ -298,4 +279,26 @@ Fin Zomm
 }
 .btn{
   margin: 2px;
+}
+.mainInfo{
+  margin-top: 150px;
+  color: white;
+
+
+}
+.mainInfoTwin{
+  padding: 10px;
+  background-color:rgba(0, 0, 0, 0.8);
+  position:relative;
+  height: 550px;
+}
+.createInfoTwin{
+  padding: 10px;
+  background-color:rgba(0, 0, 0, 0.8);
+  position:relative;
+  height: 660px;
+}
+.imagenMini{
+  border: 1px solid rgb(167, 167, 169);
+  padding: 2px;
 }

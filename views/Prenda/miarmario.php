@@ -64,7 +64,7 @@ $this->title = 'Mi armario';
     $form = ActiveForm::begin();
     echo $form->field($model, 'tipoprendaid')->dropDownList(
       ArrayHelper::map(Tipo::find()->all(), 'idtipo', 'descripcion'),
-      ['prompt'=>'Selecciona tipo de prenda',
+      ['prompt'=>'Todas',
        'onchange'=>'
          $.post( "index.php?r=prenda/filtrotipo&id="+$(this).val(), function( data ) {
            $( "select#departments-branches_branch_id" ).html( data );
@@ -138,7 +138,7 @@ foreach ($allPrendas as $key => $value) {
 
                 echo '<div class = "infoFoto col-md-3 '.$estado[$key].'">
                   <h3>Descripción</h3>
-                  <ul>
+                  <ul class="text-left">
                     <li><span>Talla: '.$talla[$key].'</span></li>
                     <li><span>Estado: '.$estado[$key].'</span></li>
                     <li><span>Dueño: '.$dueno[$key].'</span></li>';

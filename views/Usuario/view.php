@@ -79,7 +79,7 @@ $id = Yii::$app->user->id;
 $prendas= \yii\helpers\ArrayHelper::map(Prenda::find()->all(),'idPrenda','dueno');
 $grupos= \yii\helpers\ArrayHelper::map(UsuarioGrupo::find()->all(),'idUsuGrupo','idUsuario');
 $pedidos= \yii\helpers\ArrayHelper::map(Prestamo::find()->all(),'idPrestamo','idUsuarioDa');
-$pedidos= \yii\helpers\ArrayHelper::map(Prestamo::find()->all(),'idPrestamo','idUsuarioUsa');
+$dejado= \yii\helpers\ArrayHelper::map(Prestamo::find()->all(),'idPrestamo','idUsuarioUsa');
 
 
 
